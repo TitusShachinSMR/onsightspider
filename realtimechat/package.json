@@ -1,0 +1,21 @@
+{
+  "name": "realtimechat",
+  "version": "1.0.0",
+  "main": "app.mjs",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "openpgp": "^5.11.2",
+    "socket.io": "^4.7.5",
+    "ws": "^8.18.0"
+  }
+}

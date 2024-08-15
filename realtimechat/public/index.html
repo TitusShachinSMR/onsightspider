@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <form class="form-join">
+        <input
+          type="text"
+          id="name"
+          maxlength="20"
+          placeholder="Your name"
+          size="5"
+          required
+        />
+        <input
+          type="text"
+          id="room"
+          placeholder="Chat room"
+          size="10"
+          required
+        />
+        <button id="join" type="submit">Join</button>
+      </form>
+
+      <ul class="chat-display"></ul>
+      <p class="activity"></p>
+      <form class="form-msg">
+        <input type="text" id="message" placeholder="Your message" required />
+        <button type="submit">Send</button>
+      </form>
+      <div class="userandroom">
+        <div class="room-list"><div class="initial">Room List:</div></div>
+        <div class="user-list"><div class="initial">User List:</div></div>
+      </div>
+      <div class="leaveroom hidden">Leave Room</div>
+    </main>
+    <div class="heading">Real-Time-Chat-App</div>
+  </body>
+  <script type="module" src="chat.mjs"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/openpgp.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/315d30d97b.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
