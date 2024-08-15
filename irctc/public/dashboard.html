@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNR STATUS CHECKER</title>
+  </head>
+  <link rel="stylesheet" href="dashboard.css" />
+  <body>
+    <h3>IRCTC PNR Information Application</h3>
+    <form id="pnr-form">
+      <label for="pnr">Enter PNR Number:</label>
+      <input
+        type="text"
+        id="pnrInput"
+        name="pnr"
+        maxlength="10"
+        pattern="\d{10}"
+        placeholder="enter pnr"
+        required
+      />
+      <label for="trainname">Enter Trainname:</label>
+      <input
+        type="text"
+        name="trainname"
+        id="trainname"
+        maxlength="6"
+        pattern="\d{6}"
+        placeholder="enter train number"
+        required
+      />
+      <button type="submit" id="fetchData">Check Status</button>
+    </form>
+    <div id="result"></div>
+  </body>
+  <script type="module" src="dashboard.mjs"></script>
+</html>
